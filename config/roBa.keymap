@@ -72,22 +72,13 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W         &kp E         &kp R               &kp T                                                                 &kp Y                &kp U  &lt 5 I    &kp O    &kp P
-&kp A                    &kp S         &kp D         &kp F               &kp G                      &kp LS(LG(S))               &kp MINUS      &kp H                &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z         &kp X         &kp C         &kp V               &kp B                      &kp COLON                   &kp SEMICOLON  &kp N                &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 B  &lt 2 LANG_ZENKAKUHANKAKU  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 LANG_HIRAGANA                             &kp ENTER
+&kp Q                    &kp W         &kp E         &kp R                   &kp T                                                          &kp Y                &kp U  &lt 5 I    &kp O    &kp P
+&kp A                    &kp S         &kp D         &kp F                   &kp G             &kp LS(LG(S))               &kp MINUS        &kp H                &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z         &kp X         &kp C         &kp V                   &kp B             &kp COLON                   &kp SEMICOLON    &kp N                &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANG1  &lt 2 LANGUAGE_2  &lt_to_layer_0 3 SPACE      &lt 5 BACKSPACE  &lt 6 LANG_HIRAGANA                             &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        FUNCTION {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
-            >;
         };
 
         NUM {
@@ -101,13 +92,22 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans    &trans    &trans     &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans    &kp UP    &trans     &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        FUNCTION {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2    &kp F3    &kp F4    &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7    &kp F8    &kp F9    &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &mkp MB1  &mkp MB3  &mkp MB2  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                &kp F12
+            >;
         };
 
         MOUSE {
