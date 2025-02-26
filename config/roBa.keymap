@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 8>;
+        };
     };
 
     macros {
@@ -67,10 +72,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R               &kp T                                           &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F               &kp G    &kp LS(LG(S))           &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B    &kp COLON               &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 B  &lt 2 C  &lt_to_layer_0 3 D      &kp BACKSPACE  &lt 1 ENTER                             &kp A
+&kp Q                    &kp W         &kp E         &kp R               &kp T                                                                 &kp Y                &kp U  &lt 5 I    &kp O    &kp P
+&kp A                    &kp S         &kp D         &kp F               &kp G                      &kp LS(LG(S))               &kp MINUS      &kp H                &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z         &kp X         &kp C         &kp V               &kp B                      &kp COLON                   &kp SEMICOLON  &kp N                &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 B  &lt 2 LANG_ZENKAKUHANKAKU  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 LANG_HIRAGANA                             &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
