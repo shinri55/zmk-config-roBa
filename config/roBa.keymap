@@ -78,9 +78,7 @@
 &mt LEFT_SHIFT ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANG1  &lt 2 LANGUAGE_2  &lt_to_layer_0 3 SPACE      &lt 5 ENTER    &lt 6 TAB                             &kp LG(F1)
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         NUM {
@@ -90,6 +88,8 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW {
@@ -128,6 +128,8 @@
 &trans  &trans  &trans  &trans         &trans  &trans      &trans  &trans  &trans         &trans  &trans  &trans
 &trans  &trans  &trans  &trans         &trans  &trans      &trans  &trans                                 &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DEC>;
         };
 
         layer_6 {
