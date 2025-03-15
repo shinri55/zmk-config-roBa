@@ -80,13 +80,13 @@
             tapping-term-ms = <200>;
         };
 
-        sensor_100ms: sensor_100ms {
+        sensor_200ms: sensor_200ms {
             compatible = "zmk,behavior-sensor-rotate-var";
-            label = "SENSOR_100MS";
+            label = "SENSOR_200MS";
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            tap-ms = <100>;
+            tap-ms = <200>;
         };
     };
 
@@ -101,7 +101,7 @@
 &mt LEFT_SHIFT ESCAPE  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 LANG1  &lt 2 TAB  &lt_to_layer_0 3 SPACE      &lt 5 ENTER    &lt 6 LANG2                             &tog 1
             >;
 
-            sensor-bindings = <&sensor_100ms UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&sensor_200ms UP_ARROW DOWN_ARROW>;
         };
 
         ARROW {
